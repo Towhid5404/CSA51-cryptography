@@ -1,0 +1,15 @@
+def decrypt_msg(pt,n):
+    msg=" "
+    for i in range(len(pt)):
+        a=pt[i]
+        if a==" ":
+            print("it is an empty message")
+        else:
+            msg=msg+chr(ord(a)-n)
+    return msg
+
+pt="lipps"
+n=4
+print("Given Plain Text is : " ,pt)
+print("shift is: ",n)
+print("Cipher text after decryption : " ,decrypt_msg(pt,n))
