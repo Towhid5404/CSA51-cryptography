@@ -1,0 +1,38 @@
+list=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
+      'X', 'Y', 'Z']
+a=int(input("Enter the value of a: "))
+b=int(input("Enter the value of b: "))
+choice=int(input("Enter the choice:"))
+if choice==1:
+    pt=input("Enter the plain text: ")
+    pt1=pt.upper()
+    alpha=""
+    for i in pt1:
+        if i==" ":
+            print("enter the text correctly")
+        else:
+            if i in list:
+                x=list.index(i)
+                print(x, end=",")
+                new_index=int(((a*x)+b)%26)
+                print(new_index,end=",")
+                alpha=alpha+list[new_index]
+                print(list[new_index])
+
+    print(alpha)
+if choice==2:
+    ct= input("Enter the cipher text: ")
+    alpha = ""
+    ct1=ct.upper()
+    for i in ct1:
+        if i==" ":
+            print("enter the text correctly")
+        else:
+            if i in list:
+                y=list.index(i)
+                print(y,end=",")
+                new_index=int(((y-b)/a)%26)
+                print(new_index,end=",")
+                alpha=alpha+list[new_index]
+                print(list[new_index])
+    print(alpha)
