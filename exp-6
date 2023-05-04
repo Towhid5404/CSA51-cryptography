@@ -1,0 +1,17 @@
+pt=str(input("ENTER THE PLAIN TEXT : "))
+a=int(input("ENTER a : "))
+b=int(input("ENTER b : "))
+letter="abcdefghijklmnopqrstuvwxyz"
+ct=""
+for i in pt:
+    en=0
+    if i in letter:
+        pos=letter.find(i)
+        if pos==0:
+            ct+='b'
+        elif pos==4:
+            ct+='u'
+        else:
+            en=((a*pos)+b)%26
+            ct+=letter[en]
+print("CIPHER TEXT : "+ct)
