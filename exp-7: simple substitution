@@ -1,0 +1,53 @@
+ct="53‡‡†305))6*;4826)4‡)4‡);806*;48†8¶60))85;;]8*;:‡8†83(88)5†;46(;88*96*?;8)‡(;485);5†2:‡(;4956*2(5—4)8¶8*;4069285);)6†8)4‡‡;1(‡9;48081;8:8‡1;48†85;4)485†528806*81(‡9;48;(88;4(‡?34;48)4‡;161;:188;‡?;"
+length=len(ct)
+pt=['']*length
+for i in range(length):
+    currentChar = ct[i]
+    if currentChar == '1':
+        pt[i] = 'a'
+    elif currentChar == '2':
+        pt[i] = 'b'
+    elif currentChar == '3':
+        pt[i] = 'c'
+    elif currentChar == '4':
+        pt[i] = 'd'
+    elif currentChar == '5':
+        pt[i] = 'e'
+    elif currentChar == '6':
+        pt[i] = 'f'
+    elif currentChar == '7':
+        pt[i] = 'g'
+    elif currentChar == '8':
+        pt[i] = 'h'
+    elif currentChar == '9':
+        pt[i] = 'i'
+    elif currentChar == '0':
+        pt[i] = 'j'
+    elif currentChar == ';':
+        pt[i] = 'k'
+    elif currentChar == ':':
+        pt[i] = 'l'
+    elif currentChar == '(':
+        pt[i] = 'm'
+    elif currentChar == ')':
+        pt[i] = 'n'
+    elif currentChar == '?':
+        pt[i] = 'o'
+    elif currentChar == '—':
+        pt[i] = 'p'
+    elif currentChar == '†':
+        pt[i] = 'q'
+    elif currentChar == '‡':
+        pt[i] = 'r'
+    elif currentChar == '¶':
+        pt[i] = 's'
+    elif currentChar == '*':
+        pt[i] = 't'
+    elif currentChar == '[':
+        pt[i] = 'u'
+    elif currentChar == ']':
+        pt[i] = 'v'
+    else:
+        pt[i] = currentChar
+pt = ''.join(pt)
+print(pt)
