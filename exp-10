@@ -39,8 +39,8 @@ def encrypt(plain_text, playfair_matrix):
         encrypted_text += playfair_matrix[row1][col1] + playfair_matrix[row2][col2]
         i += 2
     return encrypted_text
-key = "MFHIJKUNOPQZVWXYELARGDSTBC"
-message = "Must see you over Cadogan West. Coming at once."
+key = "gudmorning"
+message ="iamtowhid"
 playfair_matrix = generate_playfair_matrix(key)
 encrypted_message = encrypt(message, playfair_matrix)
 print("Playfair Matrix:")
