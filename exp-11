@@ -1,0 +1,13 @@
+import math
+keysize=int(input("enter the key size: ")) 
+def num_possible_keys():
+    total = 1
+    for i in range(keysize):
+        if(keysize>=1):
+            total=total*(keysize- i)
+        return total
+    else:
+        print("keysize must be greater than 1")
+keys = num_possible_keys()
+print(f"The Playfair cipher has approximately {math.log2(keys):.2f} possible keys.")
+
