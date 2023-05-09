@@ -6,7 +6,6 @@ print("COMMON LETTER : "+common)
 if common in letter:
     com=letter.find(common)
 key=com-6
-#print("key = "+common+" - g = "+key)
 if (key<0):
     key=26-key
 for i in pt:
