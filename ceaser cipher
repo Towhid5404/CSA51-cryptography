@@ -1,0 +1,16 @@
+n=int(input("enter the number: "))
+a=input("enter the string: ")
+choice=input("enter the choice: 1-encryption,2-decryption: ")
+msg=" "
+for i in range(len(a)):
+    m=a[i]
+    if a==" ":
+        print("the given string is empty")
+    else:
+        if(choice=="1"):
+            msg=msg+chr(ord(m)+n)
+        elif(choice=="2"):
+           msg=msg+chr(ord(m)-n)
+        else:
+            print("please enter the correect choice")
+print("the given number is: ",msg)
